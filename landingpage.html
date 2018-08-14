@@ -3,26 +3,94 @@
     <head>
         <title>getDevJob(you)</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <style type="text/css">
+            
+            *{
+                font-family: courier !important;
+            }    
+            html, body, .my-wrapper {
+                height: 100%;
+                background-color: black;
+                overflow: hidden;
+            }
+            .container {
+                position: relative;
+                top: 20%;
+            }
+            .orange-txt {
+                color: #e65100;
+            }
+            .blue-txt {
+                color: #0277bd;
+                top: 0;
+            }
+            .left-numbers{
+                position: absolute;
+                color: #4B4C4D;
+            }
+            /* label focus color */
+            .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+            color: #0277bd !important;
+            }
+
+            /* label underline focus color */
+            .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+            border-bottom: 1px solid #0277bd !important;
+            box-shadow: 0 1px 0 0 #0277bd !important;
+            }
+            }
+
+        </style>
     </head>
     <body>
-
-        <div class ='container'>
-            <h1 class="center-align">getDevJob(you)</h1>
+        <div class ="left-numbers">
+            <div class="left-nums">01 &lt;body&gt;</div>
+            <div class="left-nums">02</div>
+            <div class="left-nums">03</div>
+            <div class="left-nums">04</div>
+            <div class="left-nums">05</div>
+            <div class="left-nums">06</div>
+            <div class="left-nums">07</div>
+            <div class="left-nums">08</div>
+            <div class="left-nums">09</div>
+            <div class="left-nums">10</div>
+            <div class="left-nums">11</div>
+            <div class="left-nums">12</div>
+            <div class="left-nums">13</div>
+            <div class="left-nums">14</div>
+            <div class="left-nums">15</div>
+            <div class="left-nums">16</div>
+            <div class="left-nums">17</div>
+            <div class="left-nums">18</div>
+            <div class="left-nums">19</div>
+            <div class="left-nums">20</div>
+            <div class="left-nums">21</div>
+            <div class="left-nums">22</div>
+            <div class="left-nums">23</div>
+            <div class="left-nums">24</div>
+            <div class="left-nums">25</div>
+            <div class="left-nums">26</div>
+            <div class="left-nums">27</div>
+            <div class="left-nums">28</div>
+            <div class="left-nums">29</div>
+            <div class="left-nums">30 &lt;/body&gt;</div>
+        </div>
+        <div class ='container '>
+            <h1 class="center-align title blue-txt ">getDevJob(<span class = 'orange-txt'>you</span>)</h1>
             <form>
-                <div class ='row'> 
-                    <div class='input-field col s6'>
-                        <input type='text' class ="autocomplete"placeholder='Job Title '/>
+                <div class ='row '> 
+                    <div class='input-field col l6 m6 s12'>
+                        <input type='text' class ="autocomplete white-text"placeholder='Job Title '/>
                     </div>
-                    <div class='input-field col s6'>
-                            <input type='text' placeholder='City, State, Zip'/>
-                        </div>
+                    <div class='input-field col l6 m6 s12'>
+                        <input class ="" type='text' placeholder='City, State, Zip'/>
+                    </div>
                 </div>
                 <div class='row'>
-                    <button class='btn teal darken-1 col s2 offset-s5 waves-effect waves-light'>Go</button>
+                    <button class='btn orange darken-4 col s2 offset-s5 waves-effect waves-light'>Go</button>
                 </div>
             </form>
-
         </div>
-
+        
     </body>
 </html>
